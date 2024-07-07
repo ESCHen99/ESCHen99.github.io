@@ -2,83 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <div class="numbers">
-        <div class="number" id="first">0</div>
-        <div class="number" id="times">
-            x
-        </div>
-        <div class="number" id="second">0</div>
-    </div>
-
-    <div class="answere">
-        <form id="form">
-            <input id="val" type="number">
-        </form>
-    </div>
-
-    <button class="submit" id="submit">
-        Submit
-    </button>
+    Hello World
 </body>
-<style>
-    body{
-        min-width: 100hw;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .numbers{
-        margin: 100px;
-    }
-    .answere{
-        margin: 100px;
-    }
-    .submit{
-        margin: 100px;
-    }
-</style>
-<script>
-    
-    function update(){
-        first.val = Math.ceil(10 + 90 * Math.random()%20);
-        second.val = Math.ceil(10 + 90 * Math.random()%20);
-        first.dom.innerHTML = first.val;
-        second.dom.innerHTML = second.val;
-        val.dom.value = null;
-    }
-    
-    function submit(event){
-        event.preventDefault();
-        if(parseInt(val.dom.value) === first.val * second.val){
-            update();
-        }
-        else alert("Resposta incorrecte!")
-    }
-    
-    let button = {
-        dom: document.getElementById("submit"),
-    } 
-    let first = {
-        dom: document.getElementById("first"),
-        val: 0
-    }
-    let second = {
-        dom: document.getElementById("second"),
-        val: 0
-    }
-    let val = {
-        dom: document.getElementById("val"),
-        val: document.getElementById("val").value
-    }
-    
-    document.getElementById("form").addEventListener("submit", submit)
-    button.dom.addEventListener("click", submit)
-</script>
 </html>
