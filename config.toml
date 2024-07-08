@@ -2,6 +2,7 @@ baseURL = 'https://eschen99.github.io/'
 languageCode = 'en-us'
 title = 'My website'
 theme = 'typo'
+publishDir = "docs"
 
 [taxonomies]
 tag = 'tags'
@@ -77,4 +78,3 @@ category = "General"
 categoryid = "categoryId"
 mapping = "pathname"
 theme = "preferred_color_scheme"
-publishDir = "docs"
